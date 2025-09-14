@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>GRC Payroll Record</title>
+</head>
+<body>
+  <div class="payrollContent" id="form" >
+    <div class="header-payroll">
+      <h3>GRC PAYROLL PROGRAM</h3>
+    </div>
+      <div class="payrollBody" >
+        <label for="id">ID Number</label>
+        <input type="number" id="id">
+        <label for="name">Last Name</label>
+        <input type="name" id="lname">
+        <label for="fname">First Name</label>
+        <input type="name" id="fname">
+        <label for="mname">Middle Name</label>
+        <input type="name" id="mname">
+        <label for="position">Position</label>
+        <input type="name" id="position">
+        <label for="rate">Rate</label>
+        <input type="number" id="rate">
+        <label for="days">Worked Days</label>
+        <input type="number" id="days">
+        <input type="submit" value="SUBMIT" onclick="submit()" id="enter">
+    </div>
+  </div>
+  
+    <div class="payrollHeading" id="outputForm">
+      <div class="payroll-title">
+        <h3>PAYROLL PROGRAM</h3>
+      </div>
+      <div class="payroll-body">
+        <div class="payroll-info">
+          <div class="newButton">
+
+            <button onclick="exit()"><i class="fa-solid fa-arrow-left fa-fade"></i></button>
+          </div>
+          <p>ID: <strong id="idNumber"></strong></p>
+          <p>NAME: <strong id="fullName"></strong><strong id="middle"></strong></p>
+          <p>POSITION: <strong id="position1"></strong></p>
+        <p>RATE: <strong id="totalRate"></strong></p>
+        <p>Days: <strong id="totalDays"></strong></p>
+        <p>Gross Pay: <strong id="gross"></strong></p>
+      </div>
+      <div class="payroll-deductions">
+        <h3>DEDUCTIONS</h3>
+        <p>SSS(5%): <strong id="sss"></strong></p>
+        <p>PAG-IBIG(3%): <strong id="pagIbig"></strong></p>
+        <p>PHILHEALTH(2%): <strong id="philhealth"></strong></p>
+        <p>TAX(5%): <strong id="tax"></strong></p>
+        <p>TOTAL DEDUCTION: <strong id="deduct"></strong></p>
+      </div>
+      <div class="payroll-net">
+        <h3>NET PAY: <strong id="netPay"></strong></h3>
+      </div>
+    </div>  
+    </div>
+
+    <script src="https://kit.fontawesome.com/5b795d6d0f.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
