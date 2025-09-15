@@ -172,10 +172,10 @@ strong{
         width: 5vw;
         font-size: 12px;
     }
-}   @media (max-width: 425px) {
+}   @media (max-width: 426px) {
     .header-payroll {
         font-size: 0.9rem;
-        margin: 10% 0 10px 0;
+        margin: 2% 0 10px 20%;
     }
     .payrollBody {
         width: 90vw;
@@ -183,7 +183,7 @@ strong{
         padding: 10px 0 10px 5px;
     }
     .payrollBody input[type="name"], .payrollBody input[type="number"], .payrollBody input[type="text"]{
-        width: 80%;
+        width: 60%;
         font-size: 0.8rem;
     }
     .payrollBody input[type="submit"] {
@@ -192,12 +192,11 @@ strong{
     }
     .payroll-title {
         font-size: 0.9rem;
-        margin: 15px 0 10px 5%;
+        margin: 5% 0 10px 25%;
     }
     .payroll-body {
         width: 90vw;
         height: auto;
-        margin-top: 40%;
         padding: 10px 0 10px 5px;
     }
     .payroll-deductions {
@@ -210,10 +209,10 @@ strong{
         font-size: 10px;
     }
 } 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
     .header-payroll {
         font-size: 0.8rem;
-        margin: 20% 0 10px 25%;
+        margin: 2% 0 10px 25%;
     }
     .payrollBody {
         width: 95vw;
@@ -230,11 +229,12 @@ strong{
     }
     .payroll-title {
         font-size: 0.8rem;
-        margin: 20% 0 10px 30%;
+        margin: 10% 0 10px 30%;
     }
     .payroll-body {
-        width: 95vw;
+        width: 90vw;
         height: auto;
+        margin-top: 20%;
         padding: 5px 5px 10px 12px;
     }
     .payroll-deductions {
