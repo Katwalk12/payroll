@@ -11,10 +11,14 @@
           alert("Please fill in all name fields.");
           return;
         }
-      else if (id === "") {
-        alert("Please fill in the ID field.");
-        return;
-      }
+        else if (id === "")  {
+          alert("Please fill in the ID field.");
+          return;
+        }
+        else if ( id.toLowerCase() !== id.toUpperCase() ) {
+          alert("ID must be a number.");
+          return;
+        }
       // middle name condition
       let middleInitial = middleName === "" ? "N/A" : middleName.charAt(0).toUpperCase() + ".";
       const fullName = lastName + ", " + firstName + " " + middleInitial;
@@ -61,6 +65,7 @@
   let outputForm = document.getElementById("outputForm");
   form.style.display = "none";    
   outputForm.style.display = "block";
+  sessionStorage.setItem("id", id);
   }
   // exit function to reset form
   function exit() {
